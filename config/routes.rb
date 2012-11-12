@@ -6,7 +6,7 @@ match "/about" => "main#about"
 
 get "main/home"
 
-get "main/help"
+get "main/about"
 
 get "main/help"
 
