@@ -1,7 +1,4 @@
 Staszhukov::Application.routes.draw do
-  # The priority is based upon order of creation:
-  # first created -> highest priority.
-SampleApp::Application.routes.draw do
 
 root :to => "main#index" # роутинг для главной страницы
 
