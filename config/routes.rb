@@ -5,7 +5,7 @@ SampleApp::Application.routes.draw do
 
 root :to => "main#index" # роутинг дл€ главной страницы
 
-match "/about" => Уstatic_pages#about"
+match "/about" => "main#about"
 
 get "main/home"
 
