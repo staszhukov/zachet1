@@ -1,13 +1,22 @@
 Staszhukov::Application.routes.draw do
-  get "main/index"
-
-  get "main/about"
-
-  get "main/help"
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
+SampleApp::Application.routes.draw do
 
+root :to => "main#index" # роутинг дл€ главной страницы
+
+match "/about" => Уstatic_pages#about"
+
+get "main/home"
+
+get "main/help"
+
+get "main/help"
+
+resources :main
+
+match "/patients/:id" => "patients#showУ # params[:id] в контроллере
+end
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
